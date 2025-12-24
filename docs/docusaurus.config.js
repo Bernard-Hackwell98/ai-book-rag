@@ -13,11 +13,11 @@ const config = {
   },
 
   // ✅ GitHub Pages URL
-  url: 'https://<YOUR_GITHUB_USERNAME>.github.io',
+  url: 'https://Bernard-Hackwell98.github.io',
   baseUrl: '/ai-book-rag/',
 
   // ✅ GitHub org/user + repo
-  organizationName: '<YOUR_GITHUB_USERNAME>',
+  organizationName: 'Bernard-Hackwell98',
   projectName: 'ai-book-rag',
 
   onBrokenLinks: 'warn',
@@ -38,7 +38,7 @@ const config = {
           routeBasePath: '/',
 
           editUrl:
-            'https://github.com/<YOUR_GITHUB_USERNAME>/ai-book-rag/tree/main/',
+            'https://github.com/Bernard-Hackwell98/ai-native-book/tree/main/',
         },
         blog: false,
         theme: {
@@ -67,7 +67,7 @@ const config = {
           label: 'Modules',
         },
         {
-          href: 'https://github.com/<YOUR_GITHUB_USERNAME>/ai-book-rag',
+          href: 'https://github.com/Bernard-Hackwell98/ai-native-book',
           label: 'GitHub',
           position: 'right',
         },
