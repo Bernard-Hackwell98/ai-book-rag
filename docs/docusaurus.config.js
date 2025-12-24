@@ -99,7 +99,8 @@ const config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/<YOUR_GITHUB_USERNAME>/ai-book-rag',
+              href: 'https://github.com/Bernard-Hackwell98/ai-native-book',
+              
             },
           ],
         },
