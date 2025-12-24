@@ -38,7 +38,7 @@ const config = {
           routeBasePath: '/',
 
           editUrl:
-            'https://github.com/Bernard-Hackwell98/ai-native-book/tree/main/',
+            'https://github.com/Bernard-Hackwell98/ai-book-rag/tree/main/',
         },
         blog: false,
         theme: {
@@ -67,7 +67,7 @@ const config = {
           label: 'Modules',
         },
         {
-          href: 'https://github.com/Bernard-Hackwell98/ai-native-book',
+          href: 'https://github.com/Bernard-Hackwell98/ai-book-rag',
           label: 'GitHub',
           position: 'right',
         },
@@ -99,7 +99,7 @@ const config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/Bernard-Hackwell98/ai-native-book',
+              href: 'https://github.com/Bernard-Hackwell98/ai-book-rag',
               
             },
           ],
