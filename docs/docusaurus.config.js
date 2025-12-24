@@ -12,11 +12,9 @@ const config = {
     v4: true,
   },
 
-  // ✅ GitHub Pages URL
   url: 'https://Bernard-Hackwell98.github.io',
   baseUrl: '/ai-book-rag/',
 
-  // ✅ GitHub org/user + repo
   organizationName: 'Bernard-Hackwell98',
   projectName: 'ai-book-rag',
 
@@ -33,10 +31,7 @@ const config = {
       {
         docs: {
           sidebarPath: './sidebars.js',
-
-          // ✅ Docs become the landing page
           routeBasePath: '/',
-
           editUrl:
             'https://github.com/Bernard-Hackwell98/ai-book-rag/tree/main/',
         },
@@ -100,7 +95,6 @@ const config = {
             {
               label: 'GitHub',
               href: 'https://github.com/Bernard-Hackwell98/ai-book-rag',
-              
             },
           ],
         },
