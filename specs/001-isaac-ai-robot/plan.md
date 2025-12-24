@@ -1,7 +1,7 @@
-# Implementation Plan: [FEATURE]
+# Implementation Plan: Module 3 – The AI-Robot Brain (NVIDIA Isaac™)
 
-**Branch**: `[###-feature-name]` | **Date**: [DATE] | **Spec**: [link]
-**Input**: Feature specification from `/specs/[###-feature-name]/spec.md`
+**Branch**: `001-isaac-ai-robot` | **Date**: 2025-12-24 | **Spec**: E:\Hammad97 Docs\Quater 4\ai-book-rag\specs\001-isaac-ai-robot\spec.md
+**Input**: Feature specification from `E:\Hammad97 Docs\Quater 4\ai-book-rag\specs\001-isaac-ai-robot\spec.md`
 
 **Note**: This template is filled in by the `/sp.plan` command. See `.specify/templates/commands/plan.md` for the execution workflow.
 
@@ -17,32 +17,34 @@
   the iteration process.
 -->
 
-**Language/Version**: [e.g., Python 3.11, Swift 5.9, Rust 1.75 or NEEDS CLARIFICATION]  
-**Primary Dependencies**: [e.g., FastAPI, UIKit, LLVM or NEEDS CLARIFICATION]  
-**Storage**: [if applicable, e.g., PostgreSQL, CoreData, files or N/A]  
-**Testing**: [e.g., pytest, XCTest, cargo test or NEEDS CLARIFICATION]  
-**Target Platform**: [e.g., Linux server, iOS 15+, WASM or NEEDS CLARIFICATION]
-**Project Type**: [single/web/mobile - determines source structure]  
-**Performance Goals**: [domain-specific, e.g., 1000 req/s, 10k lines/sec, 60 fps or NEEDS CLARIFICATION]  
-**Constraints**: [domain-specific, e.g., <200ms p95, <100MB memory, offline-capable or NEEDS CLARIFICATION]  
-**Scale/Scope**: [domain-specific, e.g., 10k users, 1M LOC, 50 screens or NEEDS CLARIFICATION]
+**Language/Version**: Node.js v20+  
+**Primary Dependencies**: Docusaurus v3, React v18  
+**Storage**: N/A  
+**Testing**: Primarily Docusaurus build validation; Jest/React Testing Library for custom components (as per research.md).  
+**Target Platform**: Web (static site via Docusaurus)  
+**Project Type**: Documentation  
+**Performance Goals**: N/A  
+**Constraints**: Clean Markdown, bullet points, no fluff, 3 chapters, Docusaurus build success.  
+**Scale/Scope**: 3 chapters of documentation.
 
 ## Constitution Check
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-- **I. Spec-Driven Development**: Is this plan derived from an approved `/sp.specify` specification?
-- **II. Technical Accuracy**: Does the plan include tasks for verifying all technical claims, code examples, and architectural assertions?
-- **III. Modular Architecture**: Does the proposed project structure promote modularity and clear separation of concerns?
-- **IV. Standardized Tooling**: Does the plan adhere to the approved stack (Docusaurus, FastAPI, Qdrant, Neon)? Justify any deviations.
-- **V. Reproducible Output**: Does the plan account for documentation, citation of sources, and clear setup instructions to ensure a third party can reproduce the results?
+- **I. Spec-Driven Development**: Yes, this plan is derived from an approved `/sp.specify` specification.
+- **II. Technical Accuracy**: Yes, the plan includes tasks for generating `research.md` to verify technical claims.
+- **III. Modular Architecture**: Yes, the proposed project structure (documentation module within Docusaurus) promotes modularity.
+- **IV. Standardized Tooling**: Yes, the plan adheres to the approved stack (Docusaurus, Node.js). No deviations.
+- **V. Reproducible Output**: Yes, the plan accounts for documentation generation and clear setup instructions via `quickstart.md`.
+
+*Post-Design Re-evaluation:* All constitution checks continue to pass. The generated artifacts (`research.md`, `data-model.md`, `quickstart.md`) align with the project's core principles.
 
 ## Project Structure
 
 ### Documentation (this feature)
 
 ```text
-specs/[###-feature]/
+specs/001-isaac-ai-robot/
 ├── plan.md              # This file (/sp.plan command output)
 ├── research.md          # Phase 0 output (/sp.plan command)
 ├── data-model.md        # Phase 1 output (/sp.plan command)
@@ -95,8 +97,7 @@ ios/ or android/
 └── [platform-specific structure: feature modules, UI flows, platform tests]
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: The documentation for this feature will reside within the `specs/001-isaac-ai-robot/` directory. The Docusaurus project structure within the `docs/` directory will be used to house the generated Markdown files (`chapter1-voice-to-intent.md`, etc., from previous tasks, but for this plan, it implies creating new files if they don't exist, or documenting their expected location). For this plan, we will create `research.md`, `data-model.md`, `quickstart.md` within the `specs/001-isaac-ai-robot/` directory. API contracts will be placed in `specs/001-isaac-ai-robot/contracts/`.
 
 ## Complexity Tracking
 

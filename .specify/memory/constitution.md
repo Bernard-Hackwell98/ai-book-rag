@@ -1,55 +1,54 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+SYNC IMPACT REPORT
+- Version: 0.0.0 -> 1.0.0 (Initial Creation)
+- Added Principles:
+  - I. Spec-Driven Development
+  - II. Technical Accuracy and Verifiability
+  - III. Modular, Runnable, and Integrated Systems
+  - IV. Standardized Tooling and Deployment
+  - V. High-Quality, Reproducible Output
+- Added Sections:
+  - Content and AI Standards
+  - Development Workflow
+- Removed Sections: None
+- Templates requiring updates:
+  - [ ] .specify/templates/plan-template.md (verification pending)
+  - [ ] .specify/templates/spec-template.md (verification pending)
+  - [ ] .specify/templates/tasks-template.md (verification pending)
+- Follow-up TODOs:
+  - TODO(RATIFICATION_DATE): Determine the official project start or adoption date.
+-->
+# Unified AI-Native Book with Embedded RAG Chatbot Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development
+All content, features, and architecture MUST be generated from structured specifications. Spec-Kit Plus (`/sp.specify`, `/sp.plan`) is the authoritative tool for all planning. This ensures every component is deliberate, traceable, and aligned with project goals before implementation begins.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Technical Accuracy and Verifiability
+All technical content MUST be accurate and verifiable. Code examples must be runnable or clearly specified as conceptual. There shall be no hallucinated APIs, libraries, or fabricated references. All conceptual systems must be explicitly marked as such. Plagiarism is strictly forbidden.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Modular, Runnable, and Integrated Systems
+The project (book and chatbot) MUST be composed of clear, modular components with well-defined separation of concerns (e.g., Ingestion, Embedding, Retrieval, Generation). Code examples and system components must be runnable and testable. The final output must feature tight integration between the documentation and the AI systems.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Standardized Tooling and Deployment
+The project will adhere to a standardized stack: Docusaurus for the book, FastAPI for the backend, Qdrant for vector storage, and Neon Serverless Postgres for metadata. Claude is the designated model for implementation and writing. The book is to be deployed via GitHub Pages, with clear instructions for all deployment processes.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. High-Quality, Reproducible Output
+All outputs—whether documentation or software—MUST be clear, reproducible, and of high quality. The RAG chatbot must cite sources for its answers. The repository must be fully reproducible by a third party, with clear setup instructions and no committed secrets.
 
-### [PRINCIPLE_6_NAME]
+### 
 
+## Content and AI Standards
 
-[PRINCIPLE__DESCRIPTION]
+Content must be written for an intermediate-to-advanced software engineer audience using Docusaurus. The RAG chatbot must answer questions using only the book's content or user-selected text, using OpenAI Agents/ChatKit SDKs. It must cite its sources in its responses.
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## Development Workflow
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All architecture and process flows MUST be defined in a specification before coding begins. The GitHub repository will be the single source of truth, containing the book source, backend code, and deployment instructions. All work must be reviewable and testable end-to-end.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution is the supreme governing document for this project. All development artifacts (specs, plans, code) and processes (reviews, commits) must comply with its principles. Amendments require a documented proposal, review, and a migration plan for affected components.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: TODO(RATIFICATION_DATE) | **Last Amended**: 2025-12-19

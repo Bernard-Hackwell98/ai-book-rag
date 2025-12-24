@@ -5,6 +5,15 @@
 **Status**: Draft  
 **Input**: User description: "$ARGUMENTS"
 
+## Constitutional Alignment *(mandatory)*
+
+*This specification MUST align with the project constitution.*
+- **Spec-Driven**: Does this spec provide enough detail for implementation?
+- **Accurate & Verifiable**: Are all claims and requirements testable and verifiable?
+- **Modular**: Does the proposed feature fit within a modular architecture?
+- **Standardized**: Does it leverage the project's standard tooling and stack?
+- **Reproducible**: Can the success criteria be met in a reproducible manner?
+
 ## User Scenarios & Testing *(mandatory)*
 
 <!--

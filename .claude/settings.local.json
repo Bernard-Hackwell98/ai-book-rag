@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls:*)",
+      "Bash(pwsh -Command \".specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks\")",
+      "Bash(npx markdown-link-check \"docs/module4/*.md\")",
+      "Bash(npm run build)",
+      "Bash(.specify\\\\scripts\\\\bash\\\\create-phr.sh --title \"Implement Module 4 VLA Documentation\" --stage \"red\" --feature \"4-docs-module4-vla\" --json)"
+    ]
+  }
+}
