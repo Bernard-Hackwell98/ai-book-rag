@@ -13,7 +13,7 @@ const config = {
   },
 
   url: 'https://bernard-hackwell98.github.io',
-  baseUrl: '/ai-book-rag/',
+  baseUrl: '/',
 
   organizationName: 'Bernard-Hackwell98',
   projectName: 'ai-book-rag',
