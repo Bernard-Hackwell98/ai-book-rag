@@ -12,7 +12,7 @@ const config = {
     v4: true,
   },
 
-  url: 'https://Bernard-Hackwell98.github.io',
+  url: 'https://bernard-hackwell98.github.io',
   baseUrl: '/ai-book-rag/',
 
   organizationName: 'Bernard-Hackwell98',
